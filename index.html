@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Other Eyes </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comic+Sans+MS&display=swap">
+   <style>
+        /* Estilos CSS para as fotos */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="font-family: 'Sacramento', cursive;"> Fotografia </h1>
+        <p style="font-family: 'Comic Sans MS', cursive; font-size: 18px; color: #222527;">"A fotografia é a história que falamos sem palavras." - Destin Sparks</p>
+    </header>
+    
+    <!-- Novo bloco para os botões -->
+    <section id="buttons">
+
+        <div class="button-container">
+            
+            <button onclick="location.href='index2.html'">Livros</button>
+            <button onclick="location.href='index3.html'">Sobre MIm</button>
+        </div>
+    </section>
+
+    <main style="font-family: 'Lato', sans-serif;">
+        
+        <section id="portfolio">
+            <h2>Fotos</h2>
+
+            <div class="gallery">
+                <img src="img1.jpeg"> 
+
+                <img src="img2.jpeg">
+                
+                <img src="img3.jpeg">
+                
+                <img src="img4.jpeg">
+                
+                <img src="img5.jpeg">
+                
+                <img src="img6.jpeg">
+                
+                <img src="img7.jpeg">
+                
+                <img src="img8.jpeg">
+                
+                <img src="img9.jpeg">
+                
+                <img src="img10.jpeg">
+               
+                <img src="img11.jpeg">
+                
+                <img src="img12.jpeg">
+                
+                <img src="img13.jpeg">
+               
+                <img src="img14.jpeg">
+                
+                <img src="img15.jpeg">
+               
+                <img src="img16.jpeg">
+               
+                <img src="img17.jpeg">
+                
+                <img src="img18.jpeg">
+                
+                <!-- Adicione mais imagens conforme necessário -->
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <p>&copy; 2024 - Thamiriz Foljarini</p>
+    </footer>
+
+    <script>
+        // Função para redirecionar o usuário para diferentes páginas ao clicar nos botões
+        document.getElementById('btn1').addEventListener('click', function() {
+            window.location.href = 'pagina1.html';
+        });
+
+        document.getElementById('btn2').addEventListener('click', function() {
+            window.location.href = 'pagina2.html';
+        });
+
+        document.getElementById('btn3').addEventListener('click', function() {
+            window.location.href = 'pagina3.html';
+        });
+
+    </script>
+</body>
+</html>
