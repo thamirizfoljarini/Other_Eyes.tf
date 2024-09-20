@@ -1,16 +1,22 @@
- <script>
+// script2.js
+
+        // Seleciona todas as imagens dentro da classe 'quote2'
         var images = document.querySelectorAll('.quote2 img');
+        // Obtém o modal onde os detalhes do livro serão exibidos
         var modal = document.getElementById('details-modal');
+        // Seleciona o botão de fechar do modal
         var closeBtn = document.querySelector('.close');
 
+        // Adiciona um evento de clique a cada imagem
         images.forEach(function(image) {
             image.addEventListener('click', function() {
                 modal.style.display = "block";
                 // Obtém e exibe os detalhes do livro associado à imagem clicada
-                var bookTitle = this.getAttribute('data-title');
-                var bookSynopsis = this.getAttribute('data-synopsis');
-                var bookAuthorYear = this.getAttribute('data-author-year');
+                var bookTitle = this.getAttribute('data-title'); // Título do livro
+                var bookSynopsis = this.getAttribute('data-synopsis'); // Sinopse do livro
+                var bookAuthorYear = this.getAttribute('data-author-year'); // Autor e ano do livro
 
+                // Atualiza o conteúdo do modal com as informações do livro
                 document.getElementById('book-title').textContent = bookTitle;
                 document.getElementById('book-synopsis').textContent = bookSynopsis;
                 document.getElementById('book-author-year').textContent = bookAuthorYear;
@@ -25,7 +31,7 @@
                 modal.style.display = "none"; // Oculta o modal
             });
         });
-
+        // Função para rolar suavemente para uma seção específica
         function scrollToSection(sectionId) {
             var section = document.getElementById(sectionId);
             if (section) {
@@ -60,4 +66,4 @@
                 navbar.classList.add('show');
             }
         });
-    </script>
+
